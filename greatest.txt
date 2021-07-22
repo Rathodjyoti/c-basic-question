@@ -1,0 +1,17 @@
+#include<stdio.h>
+    int main()
+    int a,n,c;
+    printf("\nEnter value of a, b and c:");
+    scanf("%d %d %d", &a,&b,&c);   
+    if((a > b) && (a > c))
+        printf("\n %d is greatest",a); 
+    else if((b > c) && (b > a)) 
+        printf("\n %d is greatest",b); 
+    else 
+        printf("\n %d is greatest",c); 
+    return 0; 
+    }
+OUTPUT:-
+Enter value of a,b and c:
+2,3,4
+4 is greatest
