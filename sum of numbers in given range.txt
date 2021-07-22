@@ -1,0 +1,18 @@
+#include <stdio.h>
+    int main()
+    {
+   
+    int a,b, i=0, total= 0; 
+    printf("Enter the value a and b\n");
+    scanf("%d\n%d",&a, &b);
+    for(i = a; i <= b; i++){
+        total = total + i;
+    }
+    printf("Sum of number a %d to b %d is: %d",a,b, total);
+    }
+
+OUTPUT:-
+Enter the value a and b:
+ 30
+ 40
+sum of number a 30 to b 40 is :  385 
