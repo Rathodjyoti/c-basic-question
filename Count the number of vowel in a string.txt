@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    char s[50], v[11]={'a','e','i','o','u','A','E','I','O','U'};
+    int i,count=0,j;
+    printf("enter any string\n");
+    gets(s);
+    for(i=0;s[i];i++)
+    {
+        for(j=0;v[j];j++)
+        {
+            if(s[i]==v[j])
+            count++;
+        }
+    }
+    printf("Total numbers of vowel in %s is %d",s,count);
+    return 0;
+}
+
+OUTPUT:-
+enter any string
+Welcomegvnjshbnv,am
+Total numbers of vowel in Welcomegvnjshbnv,am is 4
