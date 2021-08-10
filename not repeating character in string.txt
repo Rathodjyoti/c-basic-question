@@ -1,0 +1,26 @@
+#include <stdio.h>
+#define max 100
+int main() {
+   char s[max];
+   int count[250]={0};
+   int i;
+   printf("enter any string:\n");
+   gets(s);
+   for(i=0;s[i]!='\0';i++)
+   {
+       count[s[i]]++;
+   }
+   for(i=0;i<256;i++)
+   {
+       if(count[i]==1)
+       {
+          printf("%c ",i);
+       }
+   }
+    return 0;
+}
+
+OUTPUT:-
+enter any string:
+265263jhdgfvhajkhfc
+3 5 a c d g k v 
