@@ -1,18 +1,20 @@
 #include <stdio.h>
-    int main()
+int main() {
+    int a,b,sum=0,i=0;
+    printf("enter first and second number:");
+    scanf("%d %d",&a,&b);
+    printf("numbers between %d and %d is :",a,b);
+    for(i=a;i<=b;i++)
     {
-   
-    int a,b, i=0, total= 0; 
-    printf("Enter the value a and b\n");
-    scanf("%d\n%d",&a, &b);
-    for(i = a; i <= b; i++){
-        total = total + i;
+        printf("%d",i);
+      sum=sum+i;  
     }
-    printf("Sum of number a %d to b %d is: %d",a,b, total);
-    }
+    printf("\n");
+    printf("sum of numbers between %d and %d is %d ",a,b,sum);
+    return 0;
+}
 
 OUTPUT:-
-Enter the value a and b:
- 30
- 40
-sum of number a 30 to b 40 is :  385 
+enter first and second number:2 10
+numbers between 2 and 10 is :2345678910
+sum of numbers between 2 and 10 is 54 
