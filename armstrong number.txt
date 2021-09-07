@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() {
+    int n,rem,temp,m,sum=0;
+    printf("enter the number\n");
+    scanf("%d",&n);
+    m=n;
+    while(m!=0)
+    {
+        rem=m%10;
+        temp=rem*rem*rem;
+        sum=sum+temp;
+        //printf("%d",sum);
+        m=m/10;
+        
+    }
+    printf("%d",sum);
+    printf("\n");
+    if(n==sum)
+    printf("armstrong");
+    else
+    printf("not armtrong");
+    return 0;
+}
+
+OUTPUT:-
+enter the number
+153
+153
+armstrong
