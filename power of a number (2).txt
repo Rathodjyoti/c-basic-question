@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n,pow,r=1,i;
+    printf("enter the number and its power\n");
+    scanf("%d%d",&n,&pow);
+    for(i=1;i<=pow;i++)
+    {
+        r=r*n;
+    }
+    printf("result is %d",r);
+    return 0;
+}
+
+OUTPUT:-
+enter the number and its power
+12 2
+result is 144
