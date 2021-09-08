@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int n,temp,rem,sum=0;
+    printf("enter the number\n");
+    scanf("%d",&n);
+    temp=n;
+    while(temp>0)
+    {
+        rem=temp%10;
+        sum=sum+rem;
+        temp=temp/10;
+    }
+    printf("%d",sum);
+    if(n%sum==0)
+    printf("\nharshad numbr");
+    else
+    printf("\nnot harshad number");
+    return 0;
+}
+
+OUTPUT:-
+enter the number
+14
+5
+not harshad number
