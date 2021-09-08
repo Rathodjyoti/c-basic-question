@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int n,i,sum=0;
+    int temp;
+    printf("enter the number\n");
+    scanf("%d",&n);
+    temp=n;
+    for(i=1;i<temp;i++)
+    {
+      if(temp%i==0)
+      sum=sum+i;
+    }
+    printf("%d",sum);
+    printf("\n");
+    if(n==sum)
+    printf("perfect number");
+    else
+    printf("not perfect number");
+    return 0;
+}
+
+OUTPUT:-
+enter the number
+6
+6
+perfect number
