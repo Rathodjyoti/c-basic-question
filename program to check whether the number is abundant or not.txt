@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int n,i,temp,sum=0;
+    printf("enter the number\n");
+    scanf("%d",&n);
+    temp=n;
+    for(i=1;i<temp;i++)
+    {
+    if(temp%i==0)
+    sum=sum+i;
+    }
+    if(sum>n)
+    printf("abundant number\n");
+    else
+    printf("\n not abundant number");
+    return 0;
+}
+
+OUTPUT:-
+enter the number
+88
+abundant number
